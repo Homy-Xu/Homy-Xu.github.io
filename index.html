@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hongming (Homy) Xu</title>
+<meta name="description" content="Hongming (Homy) Xu — Undergraduate student at Shanghai Jiao Tong University (Zhiyuan Honors Program). Research on coding foundation models, long-horizon agents, and agent memory.">
+<meta name="author" content="Hongming Xu">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hongming (Homy) Xu">
+<meta property="og:description" content="Coding foundation models, long-horizon agents, and self-improving AI.">
+<meta property="og:url" content="https://homy-xu.github.io/">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<main class="page">
+
+  <!-- ───────────────────────── Header ───────────────────────── -->
+  <header class="hero">
+    <h1 class="hero__name">Hongming (Homy) Xu</h1>
+    <p class="hero__affil">
+      Undergraduate Student, School of Computer Science<br>
+      Shanghai Jiao Tong University &middot; Zhiyuan Honors Program
+    </p>
+    <nav class="hero__links" aria-label="Contact">
+      <a href="https://github.com/Homy-Xu">GitHub</a>
+      <span class="sep">·</span>
+      <a href="assets/files/CV_Hongming_Xu.pdf">CV</a>
+      <span class="sep">·</span>
+      <a href="mailto:muzhihai@sjtu.edu.cn">muzhihai@sjtu.edu.cn</a>
+      <span class="sep">·</span>
+      <a href="mailto:xuhm3410@gmail.com">xuhm3410@gmail.com</a>
+    </nav>
+  </header>
+
+  <!-- ───────────────────────── About ───────────────────────── -->
+  <section id="about">
+    <p>
+      I am an undergraduate student at the School of Computer Science, Shanghai Jiao Tong University,
+      and a member of the <strong>Zhiyuan Honors Program</strong>.
+    </p>
+    <p>
+      My research interests mainly lie in <strong>coding foundation models, long-horizon agents,
+      and self-improving AI</strong>. I am currently focusing on <strong>agent memory</strong>,
+      <strong>parametric memory</strong>, <strong>coding-model post-training</strong>, and
+      <strong>recursive self-improvement</strong> &mdash; especially how models and agents can accumulate,
+      update, and reuse experience over long-term interaction. I also have a background in
+      <strong>database systems and data management</strong>, which led me to study memory from a
+      data-management perspective and later move toward agentic coding, long-horizon memory,
+      and model self-improvement.
+    </p>
+
+    <ul class="interests">
+      <li><strong>Coding Foundation Models &amp; Long-Horizon Agents</strong> — agentic coding, persistent execution history, repository-scale software engineering</li>
+      <li><strong>Agent &amp; Parametric Memory</strong> — representation, storage, extraction, retrieval, routing, update, maintenance, and learned memory</li>
+      <li><strong>Coding-Model Post-Training &amp; Self-Improvement</strong> — task construction, trajectory curation, capability evaluation, recursive improvement</li>
+      <li><strong>Database Systems &amp; Data Management</strong> — database–LLM interaction, NL2SQL / Text-to-SQL, data-management foundations for memory systems</li>
+    </ul>
+  </section>
+
+  <!-- ───────────────────────── News ───────────────────────── -->
+  <section id="news">
+    <h2>News</h2>
+    <ul class="news">
+      <li><span class="news__date">Oct 2026</span><span class="news__body"><em>MemTrace: State-Consistent Memory for Long-Horizon Coding Agents</em> is available on arXiv and under review at <strong>ICLR 2027</strong>.</span></li>
+      <li><span class="news__date">Jun 2026</span><span class="news__body"><em>Are We Ready For An Agent-Native Memory System?</em> is available on arXiv and under review at <strong>VLDB</strong>.</span></li>
+      <li><span class="news__date">Mar 2026</span><span class="news__body"><em>Dial: A Knowledge-Grounded Dialect-Specific NL2SQL System</em> appears in <strong>PVLDB 2026</strong>.</span></li>
+      <li><span class="news__date">2026</span><span class="news__body"><em>Tensor-Network Physical Pages for Quantum-Ready Data Management</em> is part of <strong>QCDKM 2026</strong>.</span></li>
+    </ul>
+  </section>
+
+  <!-- ───────────────────────── Publications ───────────────────────── -->
+  <section id="publications">
+    <h2>Selected Publications &amp; Manuscripts</h2>
+    <p class="section-note"><span class="me">Hongming Xu</span> denotes my name in the author lists.</p>
+
+    <!-- ── MemTrace ── -->
+    <article class="pub">
+      <figure class="pub__fig">
+        <img src="assets/img/memtrace-overview.png" alt="Overview of MemTrace: execution is structured into state-bound traces, an addressable working context is maintained, and only validated evidence is restored to resume execution." loading="lazy">
+        <figcaption><strong>Overview of MemTrace.</strong> From left to right, MemTrace structures execution into state-bound traces, maintains an addressable working context, and restores only validated evidence needed to resume execution.</figcaption>
+      </figure>
+
+      <h3 class="pub__title">MemTrace: State-Consistent Memory for Long-Horizon Coding Agents</h3>
+      <p class="pub__authors"><span class="me">Hongming Xu</span>, Le Zhou, ZhongHe Jin, Xiang Zhang, Bo Tang, Zhiyu Li, Xuanhe Zhou, Juncheng Zhang</p>
+      <p class="pub__venue"><span class="badge badge--review">Under review · ICLR 2027</span> <span class="pub__role">First author</span></p>
+      <p class="pub__desc">
+        A state-consistent memory system that combines structured execution traces with repository
+        grounding to validate historical evidence before reuse. Evaluated across three software-engineering
+        benchmarks and two coding-agent harnesses, consistently improving the primary metric over native
+        memory strategies.
+      </p>
+      <p class="pub__links">
+        <a href="https://arxiv.org/abs/2610.04838">arXiv</a>
+        <a href="https://github.com/Homy-Xu/MemTrace">Repository</a>
+      </p>
+    </article>
+
+    <!-- ── Dial ── -->
+    <article class="pub">
+      <figure class="pub__fig">
+        <img src="assets/img/dial-overview.png" alt="System overview of Dial, a knowledge-grounded dialect-specific NL2SQL system." loading="lazy">
+        <figcaption><strong>System Overview of Dial.</strong> A knowledge-grounded, dialect-specific NL2SQL system combining dialect-aware logical planning with knowledge retrieval.</figcaption>
+      </figure>
+
+      <h3 class="pub__title">Dial: A Knowledge-Grounded Dialect-Specific NL2SQL System</h3>
+      <p class="pub__authors">Xiang Zhang, <span class="me">Hongming Xu</span>, Le Zhou, Wei Zhou, Xuanhe Zhou, Guoliang Li, Yuyu Luo, Changdong Liu, Guorun Chen, Jiang Liao, Fan Wu</p>
+      <p class="pub__venue"><span class="badge badge--accept">PVLDB 2026</span> <span class="pub__role">Co-first author (listed second)</span></p>
+      <p class="pub__desc">
+        Dial studies dialect-specific NL2SQL for heterogeneous database systems, where different SQL dialects
+        introduce distinct syntax, functions, and execution constraints. I contributed to natural-language
+        preprocessing, dialect-aware logical planning, and knowledge retrieval — including the design and
+        initialization of <strong>HINT-KB</strong>, iterative feedback and semantic correction, and failure analysis.
+      </p>
+      <p class="pub__links">
+        <a href="https://arxiv.org/abs/2603.07449">arXiv</a>
+        <a href="https://github.com/OpenDataBox/Dial">Code</a>
+      </p>
+    </article>
+
+    <!-- ── Agent-Native Memory ── -->
+    <article class="pub">
+      <figure class="pub__fig">
+        <img src="assets/img/agent-memory-workflows.png" alt="Typical execution workflows of agent memory." loading="lazy">
+        <figcaption><strong>Typical Execution Workflows of Agent Memory.</strong> Agent memory studied as a system of interacting modules rather than a monolithic retrieval component.</figcaption>
+      </figure>
+
+      <h3 class="pub__title">Are We Ready For An Agent-Native Memory System?</h3>
+      <p class="pub__authors">Wei Zhou, Xuanhe Zhou, Shaokun Han, <span class="me">Hongming Xu</span>, Guoliang Li, Zhiyu Li, Feiyu Xiong, Fan Wu</p>
+      <p class="pub__venue"><span class="badge badge--review">Under review · VLDB</span> <span class="pub__role">Agent memory / data management systems</span></p>
+      <p class="pub__desc">
+        A systematic study of agent memory across representation and storage, extraction, retrieval/routing,
+        and maintenance. We evaluate task effectiveness, retrieval fidelity, dynamic-update robustness,
+        long-term stability, and runtime cost across diverse workloads.
+      </p>
+      <p class="pub__links">
+        <a href="https://arxiv.org/abs/2606.24775">arXiv</a>
+        <a href="https://github.com/OpenDataBox/MemoryData">Code</a>
+      </p>
+    </article>
+
+    <!-- ── TN-Page ── -->
+    <article class="pub pub--plain">
+      <h3 class="pub__title">Tensor-Network Physical Pages for Quantum-Ready Data Management</h3>
+      <p class="pub__authors">&nbsp;</p>
+      <p class="pub__venue"><span class="badge badge--accept">QCDKM 2026</span> <span class="pub__role">Quantum database / approximate data management</span></p>
+      <p class="pub__desc">
+        TN-Page is a tensor-network physical-page representation for approximate data management and quantum
+        backends. We study workload-aware bucketization, tensorization, factorization, and backend-aware
+        encoding, evaluating fidelity, compression, qubit usage, and gate depth.
+      </p>
+    </article>
+  </section>
+
+  <!-- ───────────────────────── Experience ───────────────────────── -->
+  <section id="experience">
+    <h2>Research Experience</h2>
+
+    <div class="exp">
+      <div class="exp__head">
+        <h3 class="exp__org">MemTensor</h3>
+        <span class="exp__date">Aug. 2026 – Present</span>
+      </div>
+      <p class="exp__role">Research Intern &middot; Mentor: Juncheng Zhang (Tsinghua University)</p>
+      <ul class="exp__list">
+        <li>Contribute to coding-oriented post-training of a 284B-parameter DeepSeek-V4-Flash-0731 foundation model: design and synthesize software-engineering tasks, curate and filter training data and execution trajectories, and evaluate post-trained checkpoints on coding and repository-level tasks.</li>
+        <li>Analyze capability gains, failure modes, and remaining skill gaps to guide subsequent data selection, task construction, and training iterations.</li>
+        <li>Explore memory mechanisms for long-horizon coding agents — persistent execution history, repository-state alignment, and reliable reuse of historical evidence; led the first-author <em>MemTrace</em> project.</li>
+      </ul>
+    </div>
+
+    <div class="exp">
+      <div class="exp__head">
+        <h3 class="exp__org">Shanghai Jiao Tong University — Theseus Lab</h3>
+        <span class="exp__date">Aug. 2025 – Jun. 2026</span>
+      </div>
+      <p class="exp__role">Undergraduate Researcher &middot; Supervisor: Prof. Xuanhe Zhou</p>
+      <ul class="exp__list">
+        <li>Worked on <em>Dial</em>, a knowledge-grounded dialect-specific NL2SQL system: dialect-aware logical planning and construction of <strong>HINT-KB</strong>, including knowledge organization, initialization, retrieval components, semantic correction, and failure analysis for heterogeneous SQL dialects.</li>
+        <li>Extended this data-management perspective toward agent memory through <em>Are We Ready For An Agent-Native Memory System?</em>, studying memory representation and storage, extraction, retrieval, maintenance, and systematic evaluation — forming the basis for later work on long-horizon coding-agent memory.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── Honors ───────────────────────── -->
+  <section id="honors">
+    <h2>Honors</h2>
+    <ul class="honors">
+      <li><span class="honors__name">Zhiyuan Honors Scholarship</span> <span class="honors__year">Shanghai Jiao Tong University</span></li>
+    </ul>
+  </section>
+
+  <!-- ───────────────────────── Personal ───────────────────────── -->
+  <section id="personal">
+    <h2>Personal</h2>
+    <p>Outside research, I enjoy badminton and fitness.</p>
+  </section>
+
+  <!-- ───────────────────────── Footer ───────────────────────── -->
+  <footer class="footer">
+    <div class="footer__logos">
+      <span class="logo-chip"><img src="assets/img/sjtu-logo.png" alt="Shanghai Jiao Tong University"></span>
+      <span class="logo-chip"><img src="assets/img/theseus-logo.png" alt="Theseus Lab"></span>
+      <span class="logo-chip"><img src="assets/img/memtensor-logo.png" alt="MemTensor"></span>
+    </div>
+    <p class="footer__note">
+      Shanghai Jiao Tong University &middot; Theseus Lab &middot; MemTensor<br>
+      &copy; 2026 Hongming Xu
+    </p>
+  </footer>
+
+</main>
+
+</body>
+</html>

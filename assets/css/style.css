@@ -1,0 +1,450 @@
+/* ============================================================
+   Hongming (Homy) Xu — personal academic homepage
+   Clean, single-column, research-first.
+   ============================================================ */
+
+:root {
+  --ink:        #16181d;
+  --ink-soft:   #4a5058;
+  --ink-faint:  #7c848e;
+  --rule:       #e6e8ec;
+  --bg:         #ffffff;
+  --bg-soft:    #f7f8fa;
+  --accent:     #a4262c;   /* muted crimson */
+  --accent-soft:#fdf2f2;
+  --link:       #1f4e9c;
+
+  --measure:    860px;
+  --radius:     10px;
+
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",
+               "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
+  --font-serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia,
+                "Songti SC", "Source Han Serif SC", serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink:        #e8eaed;
+    --ink-soft:   #b3b9c2;
+    --ink-faint:  #838b95;
+    --rule:       #2c3037;
+    --bg:         #14161a;
+    --bg-soft:    #1b1e23;
+    --accent:     #e0736f;
+    --accent-soft:#2a1d1d;
+    --link:       #7aa7e8;
+  }
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 16.5px;
+  line-height: 1.72;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.page {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 72px 28px 56px;
+}
+
+/* ─────────────────────────── Typography ─────────────────────────── */
+
+p { margin: 0 0 1.05em; }
+
+a {
+  color: var(--link);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color .15s ease, color .15s ease;
+}
+a:hover { border-bottom-color: currentColor; }
+
+strong { font-weight: 650; }
+
+/* ─────────────────────────── Hero ─────────────────────────── */
+
+.hero {
+  padding-bottom: 30px;
+  margin-bottom: 42px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.hero__name {
+  font-family: var(--font-serif);
+  font-size: clamp(2.05rem, 5.2vw, 2.7rem);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  line-height: 1.14;
+  margin: 0 0 14px;
+}
+
+.hero__affil {
+  color: var(--ink-soft);
+  font-size: 1.03rem;
+  line-height: 1.6;
+  margin: 0 0 18px;
+}
+
+.hero__links {
+  font-size: 0.96rem;
+  color: var(--ink-faint);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 9px;
+}
+.hero__links a { font-weight: 500; }
+.hero__links .sep { color: var(--rule); user-select: none; }
+
+/* ─────────────────────────── Sections ─────────────────────────── */
+
+section { margin-bottom: 52px; }
+
+h2 {
+  font-size: 0.755rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin: 0 0 22px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.section-note {
+  font-size: 0.86rem;
+  color: var(--ink-faint);
+  margin: -12px 0 26px;
+}
+
+/* ─────────────────────────── Interests ─────────────────────────── */
+
+.interests {
+  list-style: none;
+  margin: 26px 0 0;
+  padding: 0;
+  border-top: 1px solid var(--rule);
+}
+.interests li {
+  padding: 13px 0 13px 18px;
+  border-bottom: 1px solid var(--rule);
+  position: relative;
+  font-size: 0.96rem;
+  line-height: 1.62;
+  color: var(--ink-soft);
+}
+.interests li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1.38em;
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+.interests strong { color: var(--ink); }
+
+/* ─────────────────────────── News ─────────────────────────── */
+
+.news { list-style: none; margin: 0; padding: 0; }
+
+.news li {
+  display: grid;
+  grid-template-columns: 92px 1fr;
+  gap: 18px;
+  padding: 11px 0;
+  border-bottom: 1px solid var(--rule);
+  font-size: 0.96rem;
+}
+.news li:first-child { border-top: 1px solid var(--rule); }
+
+.news__date {
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  font-size: 0.87rem;
+  letter-spacing: 0.005em;
+  padding-top: 2px;
+}
+.news__body { color: var(--ink-soft); line-height: 1.62; }
+.news__body em { color: var(--ink); font-style: italic; }
+
+/* ─────────────────────────── Publications ─────────────────────────── */
+
+.pub {
+  padding: 0 0 34px;
+  margin-bottom: 34px;
+  border-bottom: 1px solid var(--rule);
+}
+.pub:last-child { border-bottom: 0; margin-bottom: 0; padding-bottom: 8px; }
+
+.pub__fig {
+  margin: 0 0 20px;
+  padding: 14px;
+  background: var(--bg-soft);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+}
+.pub__fig img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  background: #fff;
+}
+.pub__fig figcaption {
+  margin-top: 12px;
+  font-size: 0.82rem;
+  line-height: 1.58;
+  color: var(--ink-faint);
+}
+.pub__fig figcaption strong { color: var(--ink-soft); font-weight: 650; }
+
+.pub__title {
+  font-family: var(--font-serif);
+  font-size: 1.27rem;
+  font-weight: 600;
+  line-height: 1.34;
+  letter-spacing: -0.008em;
+  margin: 0 0 10px;
+}
+
+.pub__authors {
+  font-size: 0.925rem;
+  line-height: 1.62;
+  color: var(--ink-soft);
+  margin: 0 0 11px;
+}
+.pub__authors .me {
+  font-weight: 700;
+  color: var(--ink);
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 1px;
+}
+
+.pub__venue {
+  margin: 0 0 13px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 0.745rem;
+  font-weight: 700;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+  padding: 3.5px 9px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.badge--accept {
+  color: #14532d;
+  background: #dcf5e4;
+  border: 1px solid #b6e6c8;
+}
+.badge--review {
+  color: #7a3d00;
+  background: #fdf0da;
+  border: 1px solid #f2d9ac;
+}
+@media (prefers-color-scheme: dark) {
+  .badge--accept { color: #a8e6bf; background: #16281d; border-color: #27452f; }
+  .badge--review { color: #f2c483; background: #2a2113; border-color: #453516; }
+}
+
+.pub__role {
+  font-size: 0.845rem;
+  color: var(--ink-faint);
+  font-style: italic;
+}
+
+.pub__desc {
+  font-size: 0.955rem;
+  line-height: 1.68;
+  color: var(--ink-soft);
+  margin: 0 0 15px;
+}
+
+.pub__links {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+.pub__links a {
+  display: inline-block;
+  font-size: 0.845rem;
+  font-weight: 600;
+  padding: 5px 14px;
+  border: 1px solid var(--rule);
+  border-radius: 7px;
+  background: var(--bg-soft);
+  color: var(--link);
+  transition: border-color .15s ease, background .15s ease;
+}
+.pub__links a:hover {
+  border-color: var(--link);
+  background: var(--bg);
+  border-bottom-color: var(--link);
+}
+
+.pub--plain .pub__authors { display: none; }
+
+/* ─────────────────────────── Experience ─────────────────────────── */
+
+.exp {
+  padding-left: 18px;
+  border-left: 2px solid var(--rule);
+  margin-bottom: 30px;
+}
+.exp:last-child { margin-bottom: 0; }
+
+.exp__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 3px;
+}
+.exp__org {
+  font-family: var(--font-serif);
+  font-size: 1.09rem;
+  font-weight: 600;
+  margin: 0;
+}
+.exp__date {
+  font-size: 0.845rem;
+  color: var(--ink-faint);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.exp__role {
+  font-size: 0.9rem;
+  color: var(--ink-faint);
+  margin: 0 0 11px;
+}
+.exp__list {
+  margin: 0;
+  padding-left: 19px;
+  font-size: 0.945rem;
+  line-height: 1.68;
+  color: var(--ink-soft);
+}
+.exp__list li { margin-bottom: 7px; }
+.exp__list li:last-child { margin-bottom: 0; }
+.exp__list em { color: var(--ink); }
+
+/* ─────────────────────────── Honors ─────────────────────────── */
+
+.honors { list-style: none; margin: 0; padding: 0; }
+.honors li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  font-size: 0.96rem;
+}
+.honors__name { font-weight: 600; }
+.honors__year { font-size: 0.845rem; color: var(--ink-faint); }
+
+/* ─────────────────────────── Footer ─────────────────────────── */
+
+.footer {
+  margin-top: 64px;
+  padding-top: 30px;
+  border-top: 1px solid var(--rule);
+  text-align: center;
+}
+.footer__logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+/* White chip keeps every logo legible in both light and dark mode:
+   the SJTU mark is dark red on transparency, while the Theseus and
+   MemTensor marks ship with an opaque white plate baked in. */
+.logo-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 52px;
+  padding: 0 17px;
+  background: #fff;
+  border: 1px solid var(--rule);
+  border-radius: 9px;
+  transition: border-color .18s ease;
+}
+.logo-chip:hover { border-color: var(--ink-faint); }
+
+.logo-chip img {
+  display: block;
+  height: 26px;
+  width: auto;
+  max-width: 172px;
+  object-fit: contain;
+}
+.logo-chip:nth-child(1) img { height: 28px; }
+.logo-chip:nth-child(2) img { height: 22px; }
+.logo-chip:nth-child(3) img { height: 24px; }
+
+.footer__note {
+  font-size: 0.82rem;
+  line-height: 1.72;
+  color: var(--ink-faint);
+  margin: 0;
+}
+
+/* ─────────────────────────── Responsive ─────────────────────────── */
+
+@media (max-width: 620px) {
+  .page { padding: 44px 20px 40px; }
+  body { font-size: 16px; }
+
+  .news li { grid-template-columns: 1fr; gap: 2px; }
+  .news__date { padding-top: 0; }
+
+  .pub__fig { padding: 10px; }
+  .pub__title { font-size: 1.17rem; }
+
+  .exp { padding-left: 14px; }
+  .exp__head { flex-direction: column; gap: 1px; }
+
+  .footer__logos { gap: 10px; }
+  .logo-chip { height: 44px; padding: 0 13px; }
+  .logo-chip img { height: 22px; }
+  .logo-chip:nth-child(1) img { height: 24px; }
+  .logo-chip:nth-child(2) img { height: 19px; }
+  .logo-chip:nth-child(3) img { height: 20px; }
+}
+
+/* ─────────────────────────── Print ─────────────────────────── */
+
+@media print {
+  .page { max-width: none; padding: 0; }
+  .pub__fig { background: none; }
+  .pub__links { display: none; }
+  body { font-size: 11pt; }
+}
