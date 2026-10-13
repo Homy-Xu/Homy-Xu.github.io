@@ -7,7 +7,7 @@ Verified on 2026-10-13. External documents were used as source material only.
 - The owner's supplied `CV_Hongming_Xu.pdf`, created on 2026-10-12, is copied without modification to `files/CV_Hongming_Xu.pdf`. It is the primary source for interests, education, contributions, positions, dates, honors, and publication status.
 - The owner's [existing GitBook homepage](https://sjtu-edu-4.gitbook.io/sjtu.edu-docs/readme) supplied the Chinese name and dated news. Its [Markdown representation](https://sjtu-edu-4.gitbook.io/sjtu.edu-docs/readme.md) was used for verification.
 - The existing [Homy-Xu/homepage](https://github.com/Homy-Xu/homepage) repository was also inspected. This new repository is a separate GitHub Pages website.
-- Complete author lists and titles were checked against the three arXiv abstract pages listed in `paper-assets.json`. Equal contribution for Dial follows the CV (co-first author, listed second). Under-review venue labels come from the CV and are not claims of acceptance.
+- Complete author lists and titles were checked against the three arXiv abstract pages listed in `paper-assets.json`. Dial's equal-contribution marks follow `main.tex` in its v2 source: Xiang Zhang, Hongming Xu, and Le Zhou share the same author note. The CV identifies Hongming Xu as co-first author, listed second. Under-review venue labels come from the CV and are not claims of acceptance.
 - The QCDKM item is included from the CV without inventing an unverified paper URL or author list.
 - News: MemTrace's first arXiv submission is October 2026; the August internship date is from the CV; Dial's July acceptance is stated on the existing personal homepage; the memory-system paper's first arXiv submission is June 2026.
 

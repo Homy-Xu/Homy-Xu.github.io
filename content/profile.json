@@ -56,7 +56,7 @@
       "id": "dial",
       "title": "Dial: A Knowledge-Grounded Dialect-Specific NL2SQL System",
       "authors": ["Xiang Zhang", "Hongming Xu", "Le Zhou", "Wei Zhou", "Xuanhe Zhou", "Guoliang Li", "Yuyu Luo", "Changdong Liu", "Guorun Chen", "Jiang Liao", "Fan Wu"],
-      "equal_contributors": ["Xiang Zhang", "Hongming Xu"],
+      "equal_contributors": ["Xiang Zhang", "Hongming Xu", "Le Zhou"],
       "venue": {"en": "PVLDB 2026", "zh": "PVLDB 2026"},
       "role": {"en": "Co-first author", "zh": "共同第一作者"},
       "badge": "PVLDB 2026",
