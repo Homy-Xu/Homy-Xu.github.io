@@ -41,6 +41,14 @@ def section_title(en, zh, extra=""):
     return f'<div class="section-heading"><h2>{label(en, zh)}</h2>{extra}</div>'
 
 
+def text_list(items, css=""):
+    return f'<ul class="{css}">' + "".join(f'<li>{t(item)}</li>' for item in items) + '</ul>'
+
+
+def contributions(item):
+    return f'<details class="contribution"><summary>{label("My contribution", "我的贡献")}</summary>{text_list(item["contributions"])}</details>'
+
+
 def publication(p):
     authors = []
     for name in p["authors"]:
@@ -49,6 +57,7 @@ def publication(p):
             author += '<sup title="Equal contribution">*</sup>'
         authors.append(author)
     role = f'<span class="paper-role">{t(p["role"])}</span>' if p["role"]["en"] else ""
+    highlights = text_list(p["highlights"], "paper-highlights") if p.get("highlights") else ""
     return f'''
     <article class="publication" id="{esc(p['id'])}">
       <figure class="paper-figure">
@@ -67,11 +76,12 @@ def publication(p):
         <p class="authors">{', '.join(authors)}</p>
         <p class="paper-meta"><span class="venue">{t(p['venue'])}</span>{role}</p>
         {t(p['summary'], 'p', 'paper-summary', rich=True)}
+        {highlights}
         <div class="paper-links">
           <a href="{esc(p['paper'])}">{icon('file')}{label('Paper', '论文')}</a>
           <a href="{esc(p['code'])}">{icon('github')}{label('Code', '代码')}</a>
         </div>
-        <details class="contribution"><summary>{label('My contribution', '我的贡献')}</summary>{t(p['contribution'], 'p')}</details>
+        {contributions(p)}
       </div>
     </article>'''
 
@@ -84,14 +94,14 @@ def experience(item):
         <div class="item-heading"><h3><a href="{esc(item['url'])}">{esc(item['organization'])}</a></h3><span class="date">{t(item['dates'])}</span></div>
         <p class="position">{t(item['role'])}</p>
         <p class="mentor">{t(item['mentor'])}</p>
-        {t(item['description'], 'p', 'experience-description')}
+        {text_list(item['details'], 'experience-details')}
       </div>
     </article>'''
 
 
 def build():
     news = "".join(f'<li><time datetime="{n["date"].replace(".", "-")}">{esc(n["date"])}</time><div>{t(n["text"], rich=True)}</div></li>' for n in P["news"])
-    interests = "".join(f'<li>{t(i)}</li>' for i in P["interests"])
+    interests = "".join(f'<li><strong>{t(i["title"])}</strong> — {t(i["description"])}</li>' for i in P["interests"])
     intro = "".join(t(p, "p", rich=True) for p in P["intro"])
     papers = "".join(publication(p) for p in P["publications"])
     experiences = "".join(experience(x) for x in P["experience"])
@@ -102,7 +112,7 @@ def build():
         "alternateName": [P["chinese_name"], "Homy Xu"], "url": P["url"],
         "image": P["url"] + P["avatar"], "sameAs": [P["github"]],
         "affiliation": {"@type": "CollegeOrUniversity", "name": P["school"]["en"]},
-        "knowsAbout": [i["en"] for i in P["interests"]]
+        "knowsAbout": [i["title"]["en"] for i in P["interests"]]
     }, ensure_ascii=False)
     document = f'''<!doctype html>
 <html lang="en">
@@ -171,7 +181,8 @@ def build():
         <section id="about" class="section about">
           {section_title('About me', '关于我')}
           <div class="intro">{intro}</div>
-          <ul class="research-interests" aria-label="Research interests">{interests}</ul>
+          <h3 class="interests-heading" id="interests-heading">{label('Research interests', '研究兴趣')}</h3>
+          <ul class="research-interests" aria-labelledby="interests-heading">{interests}</ul>
         </section>
 
         <section id="news" class="section news-section">
@@ -187,6 +198,7 @@ def build():
             <h3>{esc(extra['title'])}</h3>
             <p class="paper-meta"><span class="venue">{esc(extra['venue'])}</span></p>
             {t(extra['summary'], 'p', 'paper-summary', rich=True)}
+            {contributions(extra)}
           </article>
         </section>
 

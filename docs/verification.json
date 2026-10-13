@@ -3,62 +3,74 @@
     {
       "width": 1440,
       "language": "en",
-      "passed": true
+      "passed": true,
+      "expandedContributionsFit": true
     },
     {
       "width": 1440,
       "language": "zh",
-      "passed": true
+      "passed": true,
+      "expandedContributionsFit": true
     },
     {
       "width": 1024,
       "language": "en",
-      "passed": true
+      "passed": true,
+      "expandedContributionsFit": true
     },
     {
       "width": 1024,
       "language": "zh",
-      "passed": true
+      "passed": true,
+      "expandedContributionsFit": true
     },
     {
       "width": 768,
       "language": "en",
-      "passed": true
+      "passed": true,
+      "expandedContributionsFit": true
     },
     {
       "width": 768,
       "language": "zh",
-      "passed": true
+      "passed": true,
+      "expandedContributionsFit": true
     },
     {
       "width": 600,
       "language": "en",
-      "passed": true
+      "passed": true,
+      "expandedContributionsFit": true
     },
     {
       "width": 600,
       "language": "zh",
-      "passed": true
+      "passed": true,
+      "expandedContributionsFit": true
     },
     {
       "width": 390,
       "language": "en",
-      "passed": true
+      "passed": true,
+      "expandedContributionsFit": true
     },
     {
       "width": 390,
       "language": "zh",
-      "passed": true
+      "passed": true,
+      "expandedContributionsFit": true
     },
     {
       "width": 320,
       "language": "en",
-      "passed": true
+      "passed": true,
+      "expandedContributionsFit": true
     },
     {
       "width": 320,
       "language": "zh",
-      "passed": true
+      "passed": true,
+      "expandedContributionsFit": true
     }
   ],
   "errors": [],
@@ -67,8 +79,41 @@
   "noJavascript": true,
   "verified_on": "2026-10-13",
   "browser": "Microsoft Edge (Chromium), headless via Playwright",
-  "scope": "Local homepage; 320–1440 CSS pixels; English and Chinese; full paper figures; modal open/close; language persistence; JavaScript-disabled fallback.",
-  "cv_sha256": "e50af6e89807517fc2ce61acffd2975ae36895210b0a2f0f847b67cea1c680ea",
+  "scope": "Updated local homepage; 320–1440 CSS pixels; English and Chinese; expanded contribution lists; original figures; modal open/close; language persistence; JavaScript-disabled fallback; both current and legacy CV downloads.",
+  "typography": {
+    "body": {
+      "fontFamily": "\"Trebuchet MS\", Helvetica, Arial, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+      "fontSize": "15px",
+      "lineHeight": "24px",
+      "fontWeight": "400"
+    },
+    "h2": {
+      "fontFamily": "\"Trebuchet MS\", Helvetica, Arial, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+      "fontSize": "22px",
+      "lineHeight": "28.6px",
+      "fontWeight": "700"
+    },
+    ".paper-summary": {
+      "fontFamily": "\"Trebuchet MS\", Helvetica, Arial, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+      "fontSize": "15px",
+      "lineHeight": "24px",
+      "fontWeight": "400"
+    },
+    ".authors": {
+      "fontFamily": "\"Trebuchet MS\", Helvetica, Arial, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "22.4px",
+      "fontWeight": "400"
+    },
+    ".other-name [lang]": {
+      "fontFamily": "\"Kaiti SC\", STKaiti, KaiTi, serif",
+      "fontSize": "20px",
+      "lineHeight": "32px",
+      "fontWeight": "400"
+    }
+  },
+  "cv_sha256": "a862fa62e35d6de785ea834aae1eeb156b2a746b98530bf466ca8ad114d0b42a",
   "cv_matches_supplied_original": true,
-  "static_checks": "scripts/check.py and node --check assets/js/site.js passed."
+  "legacy_cv_matches": true,
+  "static_checks": "scripts/check.py, node --check assets/js/site.js, and git diff --check passed."
 }

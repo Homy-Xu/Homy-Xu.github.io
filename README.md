@@ -6,8 +6,8 @@ A responsive, bilingual academic website with publication figures, research expe
 
 ## Update the homepage
 
-1. Edit `content/profile.json` for biography, publications, news, and experience. Each translated field has `en` and `zh` values. Introductory paragraphs, news, and summaries allow inline HTML links and emphasis; the remaining fields are plain text.
-2. Replace `files/CV_Hongming_Xu.pdf` when the CV changes.
+1. Edit `content/profile.json` for biography, research interests, publications, news, and experience. Each translated field has `en` and `zh` values. Introductory paragraphs, news, and summaries allow inline HTML links and emphasis; the remaining fields are plain text. Research interests have a title and description; paper contributions and experience details are lists.
+2. Replace both `files/CV_Hongming_Xu.pdf` and `assets/files/CV_Hongming_Xu.pdf` with the same current PDF. The checker verifies that the current and legacy CV URLs stay in sync.
 3. Replace `assets/images/avatar.png` to change the profile image. The initial image is the owner's existing GitHub avatar.
 4. Run:
 
@@ -43,7 +43,7 @@ See [asset provenance](docs/paper-assets.json) for source paths, versions, autho
 
 ## Design acknowledgments
 
-The composition draws inspiration from [Xiang Zhang](https://lcbreathe.github.io/), [Hongrui Wu](https://onehfr.github.io/), and [Yi Duan](https://duanyi516.github.io/): a compact profile, clear academic typography, figure-led publication entries, and institutional logos. This repository has its own standalone HTML/CSS/JavaScript implementation.
+The composition draws inspiration from [Xiang Zhang](https://lcbreathe.github.io/), [Hongrui Wu](https://onehfr.github.io/), and [Yi Duan](https://duanyi516.github.io/): a compact profile, clear academic typography, figure-led publication entries, and institutional logos. The text uses Trebuchet MS with Helvetica and system fallbacks, following Yi Duan's academic typography. Biography, research interests, and contributions were expanded from [the owner's previous GitBook homepage](https://sjtu-edu-4.gitbook.io/sjtu.edu-docs), with dates and status checked against the latest CV. This repository has its own standalone HTML/CSS/JavaScript implementation.
 
 ## License
 

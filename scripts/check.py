@@ -49,7 +49,9 @@ def main():
     for figure in sources["papers"]:
         path = ROOT / figure["output_path"]
         assert hashlib.sha256(path.read_bytes()).hexdigest() == figure["output_sha256"], f"Figure differs from its provenance: {path}"
-    assert (ROOT / "files/CV_Hongming_Xu.pdf").read_bytes().startswith(b"%PDF-"), "Invalid CV"
+    cv = (ROOT / "files/CV_Hongming_Xu.pdf").read_bytes()
+    assert cv.startswith(b"%PDF-"), "Invalid CV"
+    assert cv == (ROOT / "assets/files/CV_Hongming_Xu.pdf").read_bytes(), "Legacy CV URL is out of date"
     print(f"OK: {len(page.links)} links, {len(page.images)} image elements, 3 original paper figures, and current generated HTML.")
 
 
