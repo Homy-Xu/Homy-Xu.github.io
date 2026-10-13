@@ -1,0 +1,74 @@
+{
+  "checks": [
+    {
+      "width": 1440,
+      "language": "en",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "language": "zh",
+      "passed": true
+    },
+    {
+      "width": 1024,
+      "language": "en",
+      "passed": true
+    },
+    {
+      "width": 1024,
+      "language": "zh",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "language": "en",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "language": "zh",
+      "passed": true
+    },
+    {
+      "width": 600,
+      "language": "en",
+      "passed": true
+    },
+    {
+      "width": 600,
+      "language": "zh",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "language": "en",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "language": "zh",
+      "passed": true
+    },
+    {
+      "width": 320,
+      "language": "en",
+      "passed": true
+    },
+    {
+      "width": 320,
+      "language": "zh",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "dialogs": 3,
+  "languagePersistence": true,
+  "noJavascript": true,
+  "verified_on": "2026-10-13",
+  "browser": "Microsoft Edge (Chromium), headless via Playwright",
+  "scope": "Local homepage; 320–1440 CSS pixels; English and Chinese; full paper figures; modal open/close; language persistence; JavaScript-disabled fallback.",
+  "cv_sha256": "e50af6e89807517fc2ce61acffd2975ae36895210b0a2f0f847b67cea1c680ea",
+  "cv_matches_supplied_original": true,
+  "static_checks": "scripts/check.py and node --check assets/js/site.js passed."
+}

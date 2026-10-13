@@ -1,0 +1,120 @@
+{
+  "name": "Hongming Xu",
+  "chinese_name": "许鸿铭",
+  "nickname": "Homy",
+  "url": "https://homy-xu.github.io/",
+  "updated": "2026-10-13",
+  "email": "muzhihai@sjtu.edu.cn",
+  "secondary_email": "xuhm3410@gmail.com",
+  "github": "https://github.com/Homy-Xu",
+  "cv": "files/CV_Hongming_Xu.pdf",
+  "avatar": "assets/images/avatar.png",
+  "role": {"en": "Undergraduate Researcher", "zh": "本科生 · 科研探索"},
+  "school": {"en": "Shanghai Jiao Tong University", "zh": "上海交通大学"},
+  "school_url": "https://www.sjtu.edu.cn/",
+  "program": {"en": "School of Computer Science<br>Zhiyuan Honors Program", "zh": "计算机学院<br>致远荣誉计划"},
+  "intro": [
+    {
+      "en": "I am an undergraduate at <a href=\"https://www.sjtu.edu.cn/\">Shanghai Jiao Tong University</a> and a member of the <strong>Zhiyuan Honors Program</strong>. I am currently a research intern at <a href=\"https://www.memtensor.cn/\">MemTensor</a>, mentored by Juncheng Zhang (Tsinghua University). Previously, I worked with Prof. <a href=\"https://db.zhouxh.store/\">Xuanhe Zhou</a> at <a href=\"https://theseus-labs-rsi.github.io/\">Theseus Lab</a>.",
+      "zh": "我目前就读于<a href=\"https://www.sjtu.edu.cn/\">上海交通大学</a>计算机学院，是<strong>致远荣誉计划</strong>成员。目前在 <a href=\"https://www.memtensor.cn/\">MemTensor</a> 担任研究实习生，导师为 Juncheng Zhang（清华大学）；此前在 <a href=\"https://theseus-labs-rsi.github.io/\">Theseus Lab</a> 跟随<a href=\"https://db.zhouxh.store/\">周煊赫教授</a>开展研究。"
+    },
+    {
+      "en": "My research centers on <strong>coding foundation models, long-horizon agents, and self-improving AI</strong>. I study how models and agents accumulate, update, and reuse experience, with a focus on agent memory, parametric memory, coding-model post-training, and recursive self-improvement. My background in database systems led me to approach memory from a data-management perspective.",
+      "zh": "我的研究兴趣主要是<strong>代码基础模型、长程智能体与自我改进 AI</strong>，关注模型与智能体如何在长期交互中积累、更新和复用经验。当前重点包括智能体记忆、参数记忆、代码模型后训练与递归自我改进。数据库系统的研究背景，也让我习惯从数据管理的角度理解记忆。"
+    }
+  ],
+  "interests": [
+    {"en": "Agent memory", "zh": "智能体记忆"},
+    {"en": "Agentic coding", "zh": "智能体编程"},
+    {"en": "Model post-training", "zh": "模型后训练"},
+    {"en": "Self-improving AI", "zh": "自我改进 AI"}
+  ],
+  "news": [
+    {"date": "2026.10", "text": {"en": "<a href=\"https://arxiv.org/abs/2610.04838\">MemTrace</a>, our work on state-consistent memory for coding agents, is on arXiv. Under review at ICLR 2027.", "zh": "面向代码智能体的状态一致性记忆工作 <a href=\"https://arxiv.org/abs/2610.04838\">MemTrace</a> 已发布于 arXiv，目前在 ICLR 2027 审稿中。"}},
+    {"date": "2026.08", "text": {"en": "Joined <a href=\"https://www.memtensor.cn/\">MemTensor</a> to work on coding-model post-training and long-horizon agent memory.", "zh": "加入 <a href=\"https://www.memtensor.cn/\">MemTensor</a>，研究代码模型后训练与长程智能体记忆。"}},
+    {"date": "2026.07", "text": {"en": "<a href=\"https://arxiv.org/abs/2603.07449\">Dial</a> was accepted to <strong>PVLDB 2026</strong>.", "zh": "<a href=\"https://arxiv.org/abs/2603.07449\">Dial</a> 被 <strong>PVLDB 2026</strong> 接收。"}},
+    {"date": "2026.06", "text": {"en": "<a href=\"https://arxiv.org/abs/2606.24775\">Are We Ready For An Agent-Native Memory System?</a> is available on arXiv.", "zh": "<a href=\"https://arxiv.org/abs/2606.24775\">Are We Ready For An Agent-Native Memory System?</a> 已发布于 arXiv。"}}
+  ],
+  "publications": [
+    {
+      "id": "memtrace",
+      "title": "MemTrace: State-Consistent Memory for Long-Horizon Coding Agents",
+      "authors": ["Hongming Xu", "Le Zhou", "ZhongHe Jin", "Xiang Zhang", "Bo Tang", "Zhiyu Li", "Xuanhe Zhou", "Juncheng Zhang"],
+      "equal_contributors": [],
+      "venue": {"en": "Under review at ICLR 2027", "zh": "ICLR 2027 审稿中"},
+      "role": {"en": "First author", "zh": "第一作者"},
+      "badge": "Preprint",
+      "image": "assets/images/papers/memtrace-overview.png",
+      "image_alt": "MemTrace overview: execution history becomes immutable memory traces, which are aligned with the evolving repository and checked before reuse.",
+      "figure_caption": {"en": "Figure 2 · MemTrace overview", "zh": "图 2 · MemTrace 系统总览"},
+      "paper": "https://arxiv.org/abs/2610.04838",
+      "code": "https://github.com/Homy-Xu/MemTrace",
+      "summary": {"en": "Keeping memory useful as code changes. <strong>MemTrace</strong> connects immutable execution traces with the current repository state, checking historical evidence before reuse. Evaluated on three software-engineering benchmarks and two coding-agent harnesses.", "zh": "让记忆随代码演化保持有效。<strong>MemTrace</strong> 将不可变的执行轨迹与当前仓库状态关联，在复用历史证据前检查其有效性，并在三个软件工程基准、两种代码智能体框架上进行评测。"},
+      "contribution": {"en": "Led the design and development of the state-consistent memory system, including structured execution traces, repository grounding, and evaluation against native memory strategies.", "zh": "主导状态一致性记忆系统的设计与开发，包括结构化执行轨迹、仓库状态关联，以及与原生记忆策略的对照评测。"}
+    },
+    {
+      "id": "dial",
+      "title": "Dial: A Knowledge-Grounded Dialect-Specific NL2SQL System",
+      "authors": ["Xiang Zhang", "Hongming Xu", "Le Zhou", "Wei Zhou", "Xuanhe Zhou", "Guoliang Li", "Yuyu Luo", "Changdong Liu", "Guorun Chen", "Jiang Liao", "Fan Wu"],
+      "equal_contributors": ["Xiang Zhang", "Hongming Xu"],
+      "venue": {"en": "PVLDB 2026", "zh": "PVLDB 2026"},
+      "role": {"en": "Co-first author", "zh": "共同第一作者"},
+      "badge": "PVLDB 2026",
+      "image": "assets/images/papers/dial-overview.png",
+      "image_alt": "Dial framework: dialect-aware logical planning and adaptive query refinement grounded in a hierarchical dialect knowledge base.",
+      "figure_caption": {"en": "Figure 2 · Dial framework", "zh": "图 2 · Dial 系统框架"},
+      "paper": "https://arxiv.org/abs/2603.07449",
+      "code": "https://github.com/OpenDataBox/Dial",
+      "summary": {"en": "Knowledge-grounded SQL generation across database dialects. <strong>Dial</strong> combines dialect-aware logical planning, retrieval from HINT-KB, and execution feedback with semantic correction.", "zh": "面向不同数据库方言的知识增强 SQL 生成。<strong>Dial</strong> 结合方言感知逻辑规划、HINT-KB 知识检索，以及执行反馈和语义修正，支持跨数据库的自然语言查询。"},
+      "contribution": {"en": "Contributed to natural-language preprocessing, dialect-aware logical planning, HINT-KB design and initialization, dataset preparation, iterative feedback, semantic correction, and failure analysis.", "zh": "参与自然语言预处理、方言感知逻辑规划、HINT-KB 设计与初始化、数据集准备、迭代反馈、语义修正及失败分析。"}
+    },
+    {
+      "id": "memorydata",
+      "title": "Are We Ready For An Agent-Native Memory System?",
+      "authors": ["Wei Zhou", "Xuanhe Zhou", "Shaokun Han", "Hongming Xu", "Guoliang Li", "Zhiyu Li", "Feiyu Xiong", "Fan Wu"],
+      "equal_contributors": [],
+      "venue": {"en": "Under review at VLDB", "zh": "VLDB 审稿中"},
+      "role": {"en": "", "zh": ""},
+      "badge": "Preprint",
+      "image": "assets/images/papers/memorydata-overview.png",
+      "image_alt": "Four representative agent memory workflows: streaming logs, hierarchical tiers, knowledge graphs, and hybrid multi-engine memory systems.",
+      "figure_caption": {"en": "Figure 1 · Agent memory workflows", "zh": "图 1 · 智能体记忆工作流"},
+      "paper": "https://arxiv.org/abs/2606.24775",
+      "code": "https://github.com/OpenDataBox/MemoryData",
+      "summary": {"en": "A systematic study of agent memory through a data-management lens: representation and storage, extraction, retrieval, and maintenance. We evaluate effectiveness, retrieval fidelity, update robustness, long-term stability, and runtime cost.", "zh": "从数据管理视角系统研究智能体记忆，覆盖表示与存储、提取、检索和维护，并评估任务效果、检索保真度、动态更新鲁棒性、长期稳定性及运行成本。"},
+      "contribution": {"en": "Contributed to the decomposition of memory systems, systematic evaluation across diverse workloads, and experimental analysis of retrieval, updates, stability, and cost.", "zh": "参与记忆系统模块划分、跨工作负载的系统评测，以及检索、更新、稳定性与成本的实验分析。"}
+    }
+  ],
+  "additional_publication": {
+    "title": "Tensor-Network Physical Pages for Quantum-Ready Data Management",
+    "venue": "QCDKM 2026",
+    "summary": {"en": "<strong>TN-Page</strong> explores tensor-network physical pages for approximate data management and quantum backends. Contributed to workload-aware bucketization, tensorization, factorization, backend-aware encoding, and evaluation.", "zh": "<strong>TN-Page</strong> 探索面向近似数据管理与量子后端的张量网络物理页。参与工作负载感知分桶、张量化、分解、后端感知编码及评测。"}
+  },
+  "experience": [
+    {
+      "organization": "MemTensor",
+      "url": "https://www.memtensor.cn/",
+      "logo": "assets/images/logos/memtensor.png",
+      "dates": {"en": "Aug. 2026 – Present", "zh": "2026.08 – 至今"},
+      "role": {"en": "Research Intern", "zh": "研究实习生"},
+      "mentor": {"en": "Mentor: Juncheng Zhang · Tsinghua University", "zh": "导师：Juncheng Zhang · 清华大学"},
+      "description": {"en": "Coding-oriented post-training of the 284B-parameter DeepSeek-V4-Flash-0731 model: software-engineering task synthesis, training data and trajectory curation, and checkpoint evaluation. Led MemTrace and research on reliable memory for long-horizon coding agents.", "zh": "参与 284B 参数 DeepSeek-V4-Flash-0731 模型的代码后训练，包括软件工程任务合成、训练数据与执行轨迹筛选、模型评测。主导 MemTrace，研究长程代码智能体中历史证据的可靠复用。"}
+    },
+    {
+      "organization": "Shanghai Jiao Tong University · Theseus Lab",
+      "url": "https://theseus-labs-rsi.github.io/",
+      "logo": "assets/images/logos/sjtu-seal.png",
+      "dates": {"en": "Aug. 2025 – June 2026", "zh": "2025.08 – 2026.06"},
+      "role": {"en": "Undergraduate Researcher", "zh": "本科生科研"},
+      "mentor": {"en": "Supervisor: Prof. Xuanhe Zhou", "zh": "导师：周煊赫教授"},
+      "description": {"en": "Worked on dialect-aware NL2SQL with Dial and HINT-KB, then extended this data-management perspective to agent memory through Are We Ready For An Agent-Native Memory System?.", "zh": "参与 Dial 与 HINT-KB 的方言感知 NL2SQL 研究，随后通过 Are We Ready For An Agent-Native Memory System? 将数据管理视角拓展到智能体记忆。"}
+    }
+  ],
+  "education": {
+    "dates": {"en": "Sept. 2024 – Present", "zh": "2024.09 – 至今"},
+    "degree": {"en": "Undergraduate · School of Computer Science", "zh": "本科 · 计算机学院"},
+    "note": {"en": "Zhiyuan Honors Program · Shanghai, China", "zh": "致远荣誉计划 · 中国上海"}
+  },
+  "honor": {"en": "Zhiyuan Honors Scholarship", "zh": "致远荣誉奖学金"},
+  "personal": {"en": "Outside of research, I enjoy badminton and fitness.", "zh": "科研之外，我喜欢羽毛球和健身。"}
+}

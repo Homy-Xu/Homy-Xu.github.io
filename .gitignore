@@ -1,5 +1,6 @@
 .DS_Store
-Thumbs.db
-*.swp
-.idea/
-.vscode/
+__pycache__/
+*.pyc
+_site/
+tmp/
+node_modules/

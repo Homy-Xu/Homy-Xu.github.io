@@ -1,83 +1,50 @@
-# homy-xu.github.io
+# Hongming Xu · 许鸿铭
 
-Personal academic homepage of **Hongming (Homy) Xu** — undergraduate student at the School of
-Computer Science, Shanghai Jiao Tong University (Zhiyuan Honors Program).
+Personal academic homepage: **[homy-xu.github.io](https://homy-xu.github.io/)**.
 
-Research interests: coding foundation models, long-horizon agents, agent & parametric memory,
-coding-model post-training, and self-improving AI.
+A responsive, bilingual academic website with publication figures, research experience, education, and a downloadable CV. English is the default; the language switch remembers the visitor's choice. All text is present in the static HTML, including when JavaScript is disabled.
 
-Live site: **https://homy-xu.github.io/**
+## Update the homepage
 
----
+1. Edit `content/profile.json` for biography, publications, news, and experience. Each translated field has `en` and `zh` values. Introductory paragraphs, news, and summaries allow inline HTML links and emphasis; the remaining fields are plain text.
+2. Replace `files/CV_Hongming_Xu.pdf` when the CV changes.
+3. Replace `assets/images/avatar.png` to change the profile image. The initial image is the owner's existing GitHub avatar.
+4. Run:
 
-## Structure
+   ```sh
+   python3 scripts/build.py
+   python3 scripts/check.py
+   ```
 
-```
-.
-├── index.html                      # single page, all content
-├── assets/
-│   ├── css/style.css               # styling (light + dark, responsive, print)
-│   ├── img/
-│   │   ├── memtrace-overview.png   # MemTrace, Fig. (system overview)
-│   │   ├── dial-overview.png       # Dial, "System Overview of Dial"
-│   │   ├── agent-memory-workflows.png
-│   │   ├── sjtu-logo.png
-│   │   ├── theseus-logo.png
-│   │   ├── memtensor-logo.png
-│   │   └── favicon.svg
-│   └── files/CV_Hongming_Xu.pdf
-├── .nojekyll                       # serve assets as-is, skip Jekyll processing
-└── README.md
-```
+5. Commit and push to `main`. GitHub Actions builds and deploys the site to GitHub Pages.
 
-## Design notes
+The website needs no npm packages, external fonts, analytics, or third-party runtime scripts. Python 3.9+ is enough to build. Layout and interactions live in `assets/css/site.css` and `assets/js/site.js`.
 
-- **Static HTML + CSS only.** No build step, no dependencies, no Jekyll — the repository is served
-  directly by GitHub Pages from the branch root.
-- **Single column, research-first.** Publications lead; contact details and institution logos are
-  deliberately understated.
-- **Light / dark mode** follow the reader's system preference automatically.
-- **Responsive** at a 620 px breakpoint; a print stylesheet is included.
+The original site's `assets/img/`, `assets/files/`, and `assets/css/style.css` paths are retained so previously published asset links remain usable. The current page uses `assets/images/`, `files/`, and `assets/css/site.css`.
 
-## Updating
+## Local preview
 
-Everything lives in `index.html` — edit it directly and push to `main`; GitHub Pages redeploys
-automatically in about a minute.
-
-Publication entries follow this shape:
-
-```html
-<article class="pub">
-  <figure class="pub__fig">
-    <img src="assets/img/FILE.png" alt="DESCRIPTION" loading="lazy">
-    <figcaption><strong>Caption lead.</strong> Caption body.</figcaption>
-  </figure>
-  <h3 class="pub__title">Paper Title</h3>
-  <p class="pub__authors">A, <span class="me">Hongming Xu</span>, C</p>
-  <p class="pub__venue"><span class="badge badge--review">Under review · VENUE</span></p>
-  <p class="pub__desc">One-paragraph summary.</p>
-  <p class="pub__links"><a href="…">arXiv</a><a href="…">Code</a></p>
-</article>
+```sh
+python3 scripts/build.py
+python3 -m http.server 8000
 ```
 
-Use `badge--accept` for accepted papers and `badge--review` for those under review. Wrap your own
-name in `<span class="me">` so it is highlighted in every author list.
+Open [localhost:8000](http://localhost:8000/). A deployment artifact can be staged with `python3 scripts/build.py --output _site`.
 
-## Figure sources
+## Paper illustrations and sources
 
-Each overview figure was extracted from the paper's own LaTeX source on arXiv and rasterized at
-2200 px from the vector PDF, so it stays sharp on HiDPI displays:
+The three featured figures were rendered from the original figure PDFs in the papers' arXiv TeX source archives. They preserve the complete original illustrations. Click a thumbnail to enlarge it; ordinary image links still work without JavaScript.
 
-| Figure | Source |
-| --- | --- |
-| `memtrace-overview.png` | [`arXiv:2610.04838`](https://arxiv.org/abs/2610.04838) — `figures/overview.pdf` |
-| `dial-overview.png` | [`arXiv:2603.07449`](https://arxiv.org/abs/2603.07449) — `fig/Framework.pdf` |
-| `agent-memory-workflows.png` | [`arXiv:2606.24775`](https://arxiv.org/abs/2606.24775) — `figures/intro_example_workflows_v6.pdf` |
+- MemTrace: Figure 2, `2610.04838v2`.
+- Dial: Figure 2, `2603.07449v2`.
+- Are We Ready For An Agent-Native Memory System?: Figure 1, `2606.24775v1`.
 
-The SJTU, Theseus Lab, and MemTensor logos come from the MemTrace arXiv source bundle
-(`assets/arxiv/`), whose title page already uses this institutional logo row.
+See [asset provenance](docs/paper-assets.json) for source paths, versions, authors, captions, license notices, and SHA-256 checksums, and [content sources](docs/content-sources.md) for factual sources and design references. Publication status is maintained from the owner's CV; under-review work is explicitly labeled.
 
-## Deployment
+## Design acknowledgments
 
-GitHub Pages, branch `main`, folder `/` (root). The `.nojekyll` file disables Jekyll so the
-`assets/` directory is served verbatim.
+The composition draws inspiration from [Xiang Zhang](https://lcbreathe.github.io/), [Hongrui Wu](https://onehfr.github.io/), and [Yi Duan](https://duanyi516.github.io/): a compact profile, clear academic typography, figure-led publication entries, and institutional logos. This repository has its own standalone HTML/CSS/JavaScript implementation.
+
+## License
+
+Original site code is available under the [MIT license](LICENSE). Personal content, the CV, paper illustrations, logos, and the GitHub avatar are excluded from that code license. Paper figures retain the rights and licenses documented in the provenance file; institutional and company marks belong to their respective owners.

@@ -1,0 +1,180 @@
+{
+  "schema_version": 1,
+  "retrieved_on": "2026-10-13",
+  "purpose": "Original paper illustrations for Hongming Xu's academic homepage. The site owner is a listed author of each paper.",
+  "rendering": {
+    "tool": "Poppler pdftoppm",
+    "command_template": "pdftoppm -scale-to-x 2400 -scale-to-y -1 -singlefile -png INPUT_PDF OUTPUT_PREFIX",
+    "changes": "Full original PDF page rendered at 2400 pixels wide; no cropping, redrawing, recoloring, or content edits. PNG is lossless.",
+    "visual_review": "Every final image was visually inspected as a complete figure."
+  },
+  "papers": [
+    {
+      "key": "memtrace",
+      "title": "MemTrace: State-Consistent Memory for Long-Horizon Coding Agents",
+      "authors": [
+        "Hongming Xu",
+        "Le Zhou",
+        "ZhongHe Jin",
+        "Xiang Zhang",
+        "Bo Tang",
+        "Zhiyu Li",
+        "Xuanhe Zhou",
+        "Juncheng Zhang"
+      ],
+      "arxiv_id": "2610.04838v2",
+      "abstract_url": "https://arxiv.org/abs/2610.04838v2",
+      "source_url": "https://arxiv.org/src/2610.04838v2",
+      "figure_html_url": "https://arxiv.org/html/2610.04838v2#S2.F2",
+      "source_archive_sha256": "40fd590e458393c3f94b61f582978c281c7be554bec715ba4b81297a67727a05",
+      "version_verification": "Explicit versioned source archive downloaded; chosen original asset compared byte-for-byte with the extracted source used for rendering. Version also matched abstract og:url.",
+      "tex_path": "sections/method.tex",
+      "tex_line_range": [
+        22,
+        37
+      ],
+      "figure_label": "fig:method-overview",
+      "figure_number": 2,
+      "caption": "Overview of MemTrace. From left to right, MemTrace structures execution into state-bound traces, maintains an addressable working context, and restores only validated evidence needed to resume execution.",
+      "figure_number_verification": "Confirmed against the versioned arXiv HTML figcaption.",
+      "original_asset_path": "figures/overview.pdf",
+      "original_asset_sha256": "98b3910cd4d0ce130eaa66367c1f7f7745f38b5ab9eaae9958d518db6c68afac",
+      "original_asset_bytes": 10061533,
+      "output_path": "assets/images/papers/memtrace-overview.png",
+      "output_sha256": "0c6d710064ca79c47407fec7c7de4ce09e3e163c850c8c0bb0d053767882c71d",
+      "output_bytes": 1018144,
+      "width": 2400,
+      "height": 1251,
+      "license": {
+        "name": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "url": "http://creativecommons.org/licenses/by/4.0/",
+        "scope": "Paper license listed on the arXiv abstract page; no separate figure license found in the source archive."
+      },
+      "selection_rationale": "The paper's method overview captures state-bound trace construction, addressable working context, and validated recall in one complete three-stage diagram.",
+      "original_pdf_copy_note": "The original 10 MB PDF is available in the versioned arXiv source archive; only the web PNG is included in this repository."
+    },
+    {
+      "key": "dial",
+      "title": "Dial: A Knowledge-Grounded Dialect-Specific NL2SQL System",
+      "authors": [
+        "Xiang Zhang",
+        "Hongming Xu",
+        "Le Zhou",
+        "Wei Zhou",
+        "Xuanhe Zhou",
+        "Guoliang Li",
+        "Yuyu Luo",
+        "Changdong Liu",
+        "Guorun Chen",
+        "Jiang Liao",
+        "Fan Wu"
+      ],
+      "arxiv_id": "2603.07449v2",
+      "abstract_url": "https://arxiv.org/abs/2603.07449v2",
+      "source_url": "https://arxiv.org/src/2603.07449v2",
+      "figure_html_url": "https://arxiv.org/html/2603.07449v2#S2.F2",
+      "source_archive_sha256": "80a653422e368e6625442e6ea66099159496a9ef79feeb15872254d807d13932",
+      "version_verification": "Explicit versioned source archive downloaded; chosen original asset compared byte-for-byte with the extracted source used for rendering. Version also matched abstract og:url.",
+      "tex_path": "src/preliminaries.tex",
+      "tex_line_range": [
+        51,
+        59
+      ],
+      "figure_label": "DialectSQL",
+      "figure_number": 2,
+      "caption": "System Overview of Dial.",
+      "figure_number_verification": "Confirmed against the versioned arXiv HTML figcaption.",
+      "original_asset_path": "fig/Framework.pdf",
+      "original_asset_sha256": "7fcfeabb3f436712958eb648fdd743cf675793a836151a4cd7da9c12d715a886",
+      "original_asset_bytes": 121978,
+      "output_path": "assets/images/papers/dial-overview.png",
+      "output_sha256": "bef929dea727abd997e236770ca120893a8ecf3e88c7cd1fd3ada80eed4f5a20",
+      "output_bytes": 708865,
+      "width": 2400,
+      "height": 1456,
+      "license": {
+        "name": "arXiv.org perpetual, non-exclusive license to distribute this article",
+        "url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+        "scope": "Paper license listed on the arXiv abstract page; no separate figure license found in the source archive."
+      },
+      "selection_rationale": "The system overview unifies dialect-aware logical planning, the hierarchical knowledge base, and iterative debugging and semantic verification.",
+      "original_pdf_copy_path": "assets/images/papers/dial-overview.pdf"
+    },
+    {
+      "key": "memorydata",
+      "title": "Are We Ready For An Agent-Native Memory System?",
+      "authors": [
+        "Wei Zhou",
+        "Xuanhe Zhou",
+        "Shaokun Han",
+        "Hongming Xu",
+        "Guoliang Li",
+        "Zhiyu Li",
+        "Feiyu Xiong",
+        "Fan Wu"
+      ],
+      "arxiv_id": "2606.24775v1",
+      "abstract_url": "https://arxiv.org/abs/2606.24775v1",
+      "source_url": "https://arxiv.org/src/2606.24775v1",
+      "figure_html_url": "https://arxiv.org/html/2606.24775v1#S1.F1",
+      "source_archive_sha256": "253879800076d820adce1117dc613b423b74ad0e35e504518148eb47332466a9",
+      "version_verification": "Explicit versioned source archive downloaded; chosen original asset compared byte-for-byte with the extracted source used for rendering. Version also matched abstract og:url.",
+      "tex_path": "1_introduction.tex",
+      "tex_line_range": [
+        38,
+        45
+      ],
+      "figure_label": "fig:intro",
+      "figure_number": 1,
+      "caption": "Typical Execution Workflows of Agent Memory.",
+      "figure_number_verification": "Confirmed against the versioned arXiv HTML figcaption.",
+      "original_asset_path": "figures/intro_example_workflows_v6.pdf",
+      "original_asset_sha256": "af885b0e5743500e2c332121cf8011655db8d1d113b207347d9f0daadbb9a10c",
+      "original_asset_bytes": 160460,
+      "output_path": "assets/images/papers/memorydata-overview.png",
+      "output_sha256": "603407e6fc44be7ad909de3e113d97d3e6067b1cc3ea9cb1c08c15c755dabd68",
+      "output_bytes": 637940,
+      "width": 2400,
+      "height": 1915,
+      "license": {
+        "name": "arXiv.org perpetual, non-exclusive license to distribute this article",
+        "url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+        "scope": "Paper license listed on the arXiv abstract page; no separate figure license found in the source archive."
+      },
+      "selection_rationale": "The introductory figure shows the representative agent-memory workflows and the paper's four module categories across streaming, tiered, graph, and hybrid systems.",
+      "original_pdf_copy_path": "assets/images/papers/memorydata-overview.pdf"
+    }
+  ],
+  "logos": [
+    {
+      "key": "sjtu",
+      "organization": "Shanghai Jiao Tong University",
+      "source_url": "https://arxiv.org/src/2610.04838v2",
+      "source_paper": "MemTrace: State-Consistent Memory for Long-Horizon Coding Agents",
+      "original_asset_path": "assets/arxiv/sjtu-logo.png",
+      "output_path": "assets/images/logos/sjtu.png",
+      "sha256": "ad97e3cc49c7910ad79e67b68bece81af5b90652c5cb1a86d2e3df3b5e46fdd8",
+      "bytes": 71257,
+      "width": 650,
+      "height": 145,
+      "changes": "None; exact original PNG copied with full wordmark retained.",
+      "identity_verification": "Visual review of the wordmark, corroborated by the paper affiliation list in preamble.tex lines 43-44.",
+      "rights_note": "Institutional/company logo; no separate logo license found in the paper source. Logo and trademark rights remain with the corresponding organization."
+    },
+    {
+      "key": "memtensor",
+      "organization": "MemTensor (Shanghai) Technology Co., Ltd.",
+      "source_url": "https://arxiv.org/src/2610.04838v2",
+      "source_paper": "MemTrace: State-Consistent Memory for Long-Horizon Coding Agents",
+      "original_asset_path": "assets/arxiv/memtensor-logo.png",
+      "output_path": "assets/images/logos/memtensor.png",
+      "sha256": "30ddeda5b1fa34b1c325794162b888a847e9378d4ec93fdf93324966ef6e51c5",
+      "bytes": 14127,
+      "width": 649,
+      "height": 125,
+      "changes": "None; exact original PNG copied with full wordmark retained.",
+      "identity_verification": "Visual review of the wordmark, corroborated by the paper affiliation list in preamble.tex lines 43-44.",
+      "rights_note": "Institutional/company logo; no separate logo license found in the paper source. Logo and trademark rights remain with the corresponding organization."
+    }
+  ]
+}
