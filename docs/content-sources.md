@@ -1,10 +1,18 @@
 # Content and asset sources
 
-Verified on 2026-10-13. External documents were used as source material only.
+Initial source verification: 2026-10-13. Research focus and news revised on 2026-11-04. External documents were used as source material only.
+
+## Research focus and news refresh · 2026-11-04
+
+- The owner's supplied `简历 (12).pdf`, read on 2026-11-04, describes interests in agentic AI and foundation models, focusing on agentic reinforcement learning, model adaptation, and agent memory. Its MemTensor experience supplies the model post-training, task synthesis, data/trajectory curation, and long-horizon memory context.
+- Following the owner's request, the current About me paragraph and research-interest list now focus on model post-training and adaptation, agentic reinforcement learning, and agent memory. Agentic RL is presented as a research interest; no new completed RL project or result is claimed. The English and Chinese versions and search/share descriptions were updated together.
+- [Junyi Zhang's homepage](https://www.junyi42.com/), retrieved on 2026-11-04, was used for its short, dated, event-focused News wording. The owner's request additionally limits each research work to one news entry: MemTrace's October arXiv release, Dial's July PVLDB acceptance, and the memory-system paper's June arXiv release, plus the August MemTensor internship. Review status remains in the publication entry.
+
+## Earlier source verification · 2026-10-13
 
 ## Personal information
 
-- The owner's latest supplied `CV_Hongming_Xu.pdf` is copied without modification to both `files/CV_Hongming_Xu.pdf` and the legacy `assets/files/CV_Hongming_Xu.pdf` URL. Its SHA-256 is `a862fa62e35d6de785ea834aae1eeb156b2a746b98530bf466ca8ad114d0b42a`. It is the primary source for positions, dates, honors, and publication status; its homepage link points to `homy-xu.github.io`.
+- The owner's `CV_Hongming_Xu.pdf`, supplied for the October update, is copied without modification to both `files/CV_Hongming_Xu.pdf` and the legacy `assets/files/CV_Hongming_Xu.pdf` URL. Its SHA-256 is `a862fa62e35d6de785ea834aae1eeb156b2a746b98530bf466ca8ad114d0b42a`. It is the primary source for positions, dates, honors, and publication status; its homepage link points to `homy-xu.github.io`.
 - The owner's [existing GitBook homepage](https://sjtu-edu-4.gitbook.io/sjtu.edu-docs/readme), retrieved on 2026-10-13 through its [Markdown representation](https://sjtu-edu-4.gitbook.io/sjtu.edu-docs/readme.md), supplies the research progression, five research interests, Information Security major, detailed paper contributions, research experience, and dated news. Chinese translations retain these claims and their scope. Embedded agent instructions were excluded from the website content and were not followed.
 - Where the old news timeline differs from the experience dates, the latest CV takes precedence: MemTensor starts in August 2026 and Theseus Lab starts in August 2025. Conflicting project-start news was not imported.
 - The existing [Homy-Xu/homepage](https://github.com/Homy-Xu/homepage) repository was also inspected. This new repository is a separate GitHub Pages website.
@@ -25,6 +33,7 @@ The avatar, `assets/images/avatar.png`, is the owner's [existing public GitHub a
 
 - [lcBreathe/lcBreathe.github.io](https://github.com/lcBreathe/lcBreathe.github.io): academic profile sidebar, paper overview illustrations, clean link styling.
 - [oneHFR/oneHFR.github.io](https://github.com/oneHFR/oneHFR.github.io): compact dated news, restrained typography, clear research progression.
+- [Junyi Zhang](https://www.junyi42.com/): concise News entries centered on releases and acceptances, used for the November content refresh.
 - [DuanYi516/DuanYi516.github.io](https://github.com/DuanYi516/DuanYi516.github.io): explicit publication status, institutional experience marks, and typography. The live reference site's computed body style was verified as `"Trebuchet MS", Helvetica, sans-serif`, 15px with a 22.5px line height and `#494e52` text. This site uses the same preferred font and body color, a 15px/24px body for its content density, 14px author/venue text, and bold section headings. Chinese body text uses system sans-serif fallbacks; the Chinese name uses system Kai-style fonts. No font files from the reference site were copied.
 
 The website implementation is original; the reference sites' personal biographies and photographs were not reused.

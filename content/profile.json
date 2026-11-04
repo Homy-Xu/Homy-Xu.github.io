@@ -3,7 +3,7 @@
   "chinese_name": "许鸿铭",
   "nickname": "Homy",
   "url": "https://homy-xu.github.io/",
-  "updated": "2026-10-13",
+  "updated": "2026-11-04",
   "email": "muzhihai@sjtu.edu.cn",
   "secondary_email": "xuhm3410@gmail.com",
   "github": "https://github.com/Homy-Xu",
@@ -32,59 +32,39 @@
       "zh": "我的研究始于<strong>数据库系统与数据管理</strong>，关注大语言模型如何与结构化数据及异构数据库交互。这段经历让我开始将<strong>记忆视为一个数据管理问题</strong>：智能体应如何表示、存储、检索、更新和维护经验？在 <a href=\"#memorydata\"><em>Are We Ready For An Agent-Native Memory System?</em></a> 中，我通过系统模块划分与系统性评测探索了这些问题。"
     },
     {
-      "en": "Building on this foundation, I now focus on <strong>coding foundation models, long-horizon agents, and memory for self-improving AI</strong>. At MemTensor, I work on coding-model post-training and memory mechanisms for long-horizon coding agents. I am especially interested in how external and parametric memory help models and agents accumulate, consolidate, and reuse experience over long-term interaction.",
-      "zh": "在此基础上，我目前关注<strong>代码基础模型、长程智能体，以及服务于自我改进 AI 的记忆机制</strong>。在 MemTensor，我参与代码模型后训练，并研究长程代码智能体的记忆机制。我尤其关注外部记忆与参数记忆如何帮助模型和智能体在长期交互中积累、整合和复用经验。"
+      "en": "My current research focuses on <strong>foundation model post-training, agentic reinforcement learning, and agent memory</strong>. At MemTensor, I contribute to large-scale model post-training and explore memory mechanisms for long-horizon agents. I am particularly interested in how agents learn from interaction feedback, adapt model parameters, and accumulate and reuse experience over time.",
+      "zh": "我目前的研究重点是<strong>基础模型后训练、智能体强化学习（Agentic RL）与智能体记忆</strong>。在 MemTensor，我参与大规模模型的后训练，并探索长程智能体的记忆机制。我尤其关注智能体如何从交互反馈中学习、适应性地更新模型参数，以及持续积累和复用经验。"
     }
   ],
   "interests": [
     {
       "title": {
-        "en": "Coding Foundation Models & Agentic Coding",
-        "zh": "代码基础模型与智能体编程"
+        "en": "Model Post-Training & Adaptation",
+        "zh": "模型后训练与适应"
       },
       "description": {
-        "en": "Post-training, software-engineering task synthesis, trajectory curation, and repository-level reasoning.",
-        "zh": "模型后训练、软件工程任务合成、轨迹筛选与仓库级推理。"
+        "en": "Training data and trajectory curation, task synthesis, and model parameter adaptation.",
+        "zh": "训练数据与轨迹筛选、任务合成，以及模型参数适应。"
       }
     },
     {
       "title": {
-        "en": "Agent Memory & Long-Horizon Agents",
-        "zh": "智能体记忆与长程智能体"
+        "en": "Agentic Reinforcement Learning",
+        "zh": "智能体强化学习（Agentic RL）"
       },
       "description": {
-        "en": "Persistent execution memory, state tracking, retrieval, validation, consolidation, and maintenance.",
-        "zh": "持久化执行记忆、状态跟踪、检索、验证、整合与维护。"
+        "en": "Learning from interaction feedback to improve decision-making over long horizons.",
+        "zh": "利用交互反馈学习，提升长程任务中的决策能力。"
       }
     },
     {
       "title": {
-        "en": "Parametric Memory & Model Adaptation",
-        "zh": "参数记忆与模型适应"
+        "en": "Agent Memory",
+        "zh": "智能体记忆"
       },
       "description": {
-        "en": "Experience stored in model parameters, continual adaptation, and the interplay of parametric and external memory.",
-        "zh": "模型参数中的经验存储、持续适应，以及参数记忆与外部记忆的交互。"
-      }
-    },
-    {
-      "title": {
-        "en": "Self-Improving & Recursive Self-Improving AI",
-        "zh": "自我改进与递归自我改进 AI"
-      },
-      "description": {
-        "en": "Learning from execution and failures, discovering capability gaps, and iteratively improving data and models.",
-        "zh": "从执行与失败中学习、发现能力缺口，以及迭代改进数据与模型。"
-      }
-    },
-    {
-      "title": {
-        "en": "Data Systems for Intelligent Agents",
-        "zh": "面向智能体的数据系统"
-      },
-      "description": {
-        "en": "Data-management abstractions for memory, structured state, retrieval, updates, and maintenance.",
-        "zh": "面向记忆、结构化状态、检索、更新与维护的数据管理抽象。"
+        "en": "Organizing, retrieving, and maintaining experience for reliable reuse across long-running tasks.",
+        "zh": "组织、检索与维护经验，支持长期任务中的可靠复用。"
       }
     }
   ],
@@ -92,43 +72,29 @@
     {
       "date": "2026.10",
       "text": {
-        "en": "<a href=\"https://arxiv.org/abs/2610.04838\">MemTrace</a>, our work on state-consistent memory for long-horizon coding agents, is now on arXiv.",
-        "zh": "面向长程代码智能体的状态一致性记忆工作 <a href=\"https://arxiv.org/abs/2610.04838\">MemTrace</a> 已发布于 arXiv。"
-      }
-    },
-    {
-      "date": "2026.09",
-      "text": {
-        "en": "<a href=\"https://arxiv.org/abs/2610.04838\">MemTrace</a> is under review at <strong>ICLR 2027</strong>.",
-        "zh": "<a href=\"https://arxiv.org/abs/2610.04838\">MemTrace</a> 已提交 <strong>ICLR 2027</strong>，目前审稿中。"
+        "en": "Our work <a href=\"https://arxiv.org/abs/2610.04838\">MemTrace</a> is now on arXiv!",
+        "zh": "我们的工作 <a href=\"https://arxiv.org/abs/2610.04838\">MemTrace</a> 已发布于 arXiv！"
       }
     },
     {
       "date": "2026.08",
       "text": {
-        "en": "Joined <a href=\"https://www.memtensor.cn/\">MemTensor</a> to work on coding-model post-training and long-horizon agent memory.",
-        "zh": "加入 <a href=\"https://www.memtensor.cn/\">MemTensor</a>，研究代码模型后训练与长程智能体记忆。"
+        "en": "I joined <a href=\"https://www.memtensor.cn/\">MemTensor</a> as a research intern, working on model post-training and agent memory.",
+        "zh": "我加入 <a href=\"https://www.memtensor.cn/\">MemTensor</a> 担任研究实习生，研究模型后训练与智能体记忆。"
       }
     },
     {
       "date": "2026.07",
       "text": {
-        "en": "<a href=\"https://arxiv.org/abs/2603.07449\">Dial</a> was accepted to <strong>PVLDB 2026</strong>.",
-        "zh": "<a href=\"https://arxiv.org/abs/2603.07449\">Dial</a> 被 <strong>PVLDB 2026</strong> 接收。"
+        "en": "<a href=\"https://arxiv.org/abs/2603.07449\">Dial</a> was accepted to <strong>PVLDB 2026</strong>!",
+        "zh": "<a href=\"https://arxiv.org/abs/2603.07449\">Dial</a> 被 <strong>PVLDB 2026</strong> 接收！"
       }
     },
     {
       "date": "2026.06",
       "text": {
-        "en": "<a href=\"https://arxiv.org/abs/2606.24775\">Are We Ready For An Agent-Native Memory System?</a> is available on arXiv.",
-        "zh": "<a href=\"https://arxiv.org/abs/2606.24775\">Are We Ready For An Agent-Native Memory System?</a> 已发布于 arXiv。"
-      }
-    },
-    {
-      "date": "2026.03",
-      "text": {
-        "en": "<a href=\"https://arxiv.org/abs/2603.07449\">Dial</a>, our work on knowledge-grounded dialect-specific NL2SQL, is on arXiv.",
-        "zh": "知识增强的方言感知 NL2SQL 工作 <a href=\"https://arxiv.org/abs/2603.07449\">Dial</a> 已发布于 arXiv。"
+        "en": "Our study <a href=\"https://arxiv.org/abs/2606.24775\">Are We Ready For An Agent-Native Memory System?</a> is on arXiv.",
+        "zh": "我们的研究 <a href=\"https://arxiv.org/abs/2606.24775\">Are We Ready For An Agent-Native Memory System?</a> 已发布于 arXiv。"
       }
     }
   ],

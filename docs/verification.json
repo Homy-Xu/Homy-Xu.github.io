@@ -115,5 +115,58 @@
   "cv_sha256": "a862fa62e35d6de785ea834aae1eeb156b2a746b98530bf466ca8ad114d0b42a",
   "cv_matches_supplied_original": true,
   "legacy_cv_matches": true,
-  "static_checks": "scripts/check.py, node --check assets/js/site.js, and git diff --check passed."
+  "static_checks": "scripts/check.py, node --check assets/js/site.js, and git diff --check passed.",
+  "content_refresh": {
+    "verified_on": "2026-11-04",
+    "scope": "About me, research interests, News, and search/share descriptions; English and Chinese; desktop and mobile.",
+    "checks": [
+      {
+        "width": 1440,
+        "language": "en",
+        "passed": true,
+        "horizontalOverflow": false,
+        "interests": 3,
+        "newsCount": 4,
+        "uniqueWorks": true,
+        "removedSelfImproving": true,
+        "agenticRL": true
+      },
+      {
+        "width": 1440,
+        "language": "zh",
+        "passed": true,
+        "horizontalOverflow": false,
+        "interests": 3,
+        "newsCount": 4,
+        "uniqueWorks": true,
+        "removedSelfImproving": true,
+        "agenticRL": true
+      },
+      {
+        "width": 390,
+        "language": "en",
+        "passed": true,
+        "horizontalOverflow": false,
+        "interests": 3,
+        "newsCount": 4,
+        "uniqueWorks": true,
+        "removedSelfImproving": true,
+        "agenticRL": true
+      },
+      {
+        "width": 390,
+        "language": "zh",
+        "passed": true,
+        "horizontalOverflow": false,
+        "interests": 3,
+        "newsCount": 4,
+        "uniqueWorks": true,
+        "removedSelfImproving": true,
+        "agenticRL": true
+      }
+    ],
+    "errors": [],
+    "source_resume_sha256": "296445994286805c3f1070fdcfc4dccc746030872f625989812ab07e70d72c94",
+    "static_checks": "scripts/check.py and git diff --check passed."
+  }
 }

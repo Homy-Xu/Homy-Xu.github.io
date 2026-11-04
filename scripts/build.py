@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Build the bilingual static homepage with Python's standard library."""
 import argparse
+import calendar
+import datetime
 import html
 import json
 import shutil
@@ -100,6 +102,8 @@ def experience(item):
 
 
 def build():
+    updated = datetime.date.fromisoformat(P["updated"])
+    updated_label = label(f'Updated {calendar.month_name[updated.month]} {updated.year}', f'更新于 {updated.year} 年 {updated.month} 月')
     news = "".join(f'<li><time datetime="{n["date"].replace(".", "-")}">{esc(n["date"])}</time><div>{t(n["text"], rich=True)}</div></li>' for n in P["news"])
     interests = "".join(f'<li><strong>{t(i["title"])}</strong> — {t(i["description"])}</li>' for i in P["interests"])
     intro = "".join(t(p, "p", rich=True) for p in P["intro"])
@@ -121,11 +125,11 @@ def build():
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
   <title>Hongming Xu · 许鸿铭</title>
-  <meta name="description" content="Hongming Xu, undergraduate at Shanghai Jiao Tong University and research intern at MemTensor. Research in coding foundation models, long-horizon agents, and self-improving AI.">
+  <meta name="description" content="Hongming Xu, undergraduate at Shanghai Jiao Tong University and research intern at MemTensor. Research in model post-training and adaptation, agentic reinforcement learning, and agent memory.">
   <link rel="canonical" href="{esc(P['url'])}">
   <meta property="og:type" content="profile">
   <meta property="og:title" content="Hongming Xu · 许鸿铭">
-  <meta property="og:description" content="Coding foundation models · Long-horizon agents · Self-improving AI. Shanghai Jiao Tong University / MemTensor.">
+  <meta property="og:description" content="Model post-training and adaptation · Agentic reinforcement learning · Agent memory. Shanghai Jiao Tong University / MemTensor.">
   <meta property="og:url" content="{esc(P['url'])}">
   <meta property="og:image" content="{esc(P['url'] + P['avatar'])}">
   <meta name="twitter:card" content="summary">
@@ -229,7 +233,7 @@ def build():
 
     <footer class="footer">
       <span>© 2026 Hongming Xu</span>
-      <div><span>{label('Updated October 2026', '更新于 2026 年 10 月')}</span><a href="https://github.com/Homy-Xu/Homy-Xu.github.io">{label('Source', '源码')}{icon('arrow')}</a><a href="#about">{label('Back to top', '回到顶部')} ↑</a></div>
+      <div><span>{updated_label}</span><a href="https://github.com/Homy-Xu/Homy-Xu.github.io">{label('Source', '源码')}{icon('arrow')}</a><a href="#about">{label('Back to top', '回到顶部')} ↑</a></div>
     </footer>
   </div>
 
