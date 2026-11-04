@@ -300,12 +300,12 @@
       },
       "details": [
         {
-          "en": "Contribute to coding-oriented post-training of the 284B-parameter DeepSeek-V4-Flash-0731 model: synthesize software-engineering tasks, curate and filter training data and execution trajectories, and evaluate checkpoints on coding and repository-level tasks.",
-          "zh": "参与 284B 参数 DeepSeek-V4-Flash-0731 模型的代码后训练：合成软件工程任务，整理与筛选训练数据及执行轨迹，并在代码与仓库级任务上评测模型检查点。"
+          "en": "Contribute to post-training of the 284B-parameter DeepSeek-V4-Flash-0731 model. Designed a strategy for task synthesis and data mixing by difficulty, improving DeepSWE performance by nearly 10%.",
+          "zh": "参与 284B 参数 DeepSeek-V4-Flash-0731 模型的后训练。设计 DeepSWE 任务合成与难度感知数据配比策略，使 DeepSWE 表现提升近 10%。"
         },
         {
-          "en": "Analyze capability gains, failure modes, and remaining skill gaps across training iterations, using evaluation to guide data selection, task construction, trajectory filtering, and subsequent post-training.",
-          "zh": "分析各轮训练中的能力提升、失败模式与剩余能力缺口，以评测结果指导数据选择、任务构造、轨迹筛选及后续训练。"
+          "en": "Expanded 113 original SWE tasks into a pool of 550 staged, ablation, and repair tasks by decomposing reference patches, masking functions, and repairing near-miss solutions. Selected trajectories that passed execution tests and adjusted the training mix by task difficulty, upweighting successful trajectories from harder tasks and filtering easy ablation examples.",
+          "zh": "从 113 道原始 SWE 任务扩展出包含 550 道分阶段、消融和修复子任务的任务池，分别通过标准补丁分解、函数挖空和失败补丁修复构造。筛选通过测试的轨迹，并根据原题难度调整训练配比，提高难题成功轨迹的采样权重、过滤简单消融样本。"
         },
         {
           "en": "Lead MemTrace, studying persistent execution history, repository-state alignment, and reliable reuse of historical evidence in long-horizon coding agents.",

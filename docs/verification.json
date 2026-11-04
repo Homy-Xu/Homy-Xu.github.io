@@ -168,5 +168,37 @@
     "errors": [],
     "source_resume_sha256": "296445994286805c3f1070fdcfc4dccc746030872f625989812ab07e70d72c94",
     "static_checks": "scripts/check.py and git diff --check passed."
+  },
+  "experience_refresh": {
+    "verified_on": "2026-11-04",
+    "scope": "MemTensor experience; English and Chinese; desktop and mobile; reported result and method text.",
+    "checks": [
+      {
+        "width": 1440,
+        "language": "en",
+        "passed": true,
+        "horizontalOverflow": false
+      },
+      {
+        "width": 1440,
+        "language": "zh",
+        "passed": true,
+        "horizontalOverflow": false
+      },
+      {
+        "width": 390,
+        "language": "en",
+        "passed": true,
+        "horizontalOverflow": false
+      },
+      {
+        "width": 390,
+        "language": "zh",
+        "passed": true,
+        "horizontalOverflow": false
+      }
+    ],
+    "errors": [],
+    "static_checks": "scripts/check.py and git diff --check passed."
   }
 }

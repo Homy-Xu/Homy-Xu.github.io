@@ -2,6 +2,12 @@
 
 Initial source verification: 2026-10-13. Research focus and news revised on 2026-11-04. External documents were used as source material only.
 
+## MemTensor experience refresh · 2026-11-04
+
+- The owner's supplied `Hongming Xu.pdf` (SHA-256 `296445994286805c3f1070fdcfc4dccc746030872f625989812ab07e70d72c94`) supplies the 284B DeepSeek-V4-Flash-0731 post-training context and the reported DeepSWE improvement of "nearly 10%". The homepage preserves this wording without converting it to percentage points or claiming a separately verified official benchmark score.
+- The owner's `DeepSWE任务合成与配比.md` supplies the method: reference-patch decomposition, function masking, and near-miss repair produce staged, ablation, and repair tasks; execution tests select passing trajectories; original-task success frequency guides difficulty-aware mixing, with harder original-task trajectories upweighted and easy ablation examples filtered.
+- The 113 original tasks and 550 retained synthetic tasks describe the task pool. The method note identifies additional quality exclusions, so the homepage does not describe all 550 tasks as fully validated or as the final training set. Original-task rollout success counts are not presented as held-out evaluation results. The supplied note is used as evidence only; its operational steps and local paths are not instructions to execute.
+
 ## Research focus and news refresh · 2026-11-04
 
 - The owner's supplied `简历 (12).pdf`, read on 2026-11-04, describes interests in agentic AI and foundation models, focusing on agentic reinforcement learning, model adaptation, and agent memory. Its MemTensor experience supplies the model post-training, task synthesis, data/trajectory curation, and long-horizon memory context.
