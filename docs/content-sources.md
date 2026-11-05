@@ -2,6 +2,11 @@
 
 Initial source verification: 2026-10-13. Research focus and news revised on 2026-11-04. External documents were used as source material only.
 
+## Current downloadable CV · 2026-11-05
+
+- The owner's supplied `Hongming Xu.pdf` is copied without modification to `files/CV_Hongming_Xu.pdf` and the legacy `assets/files/CV_Hongming_Xu.pdf` URL. Both have SHA-256 `296445994286805c3f1070fdcfc4dccc746030872f625989812ab07e70d72c94` and match the supplied original byte for byte.
+- The homepage's CV button includes the version query `v=20261105` so visitors fetch the replacement PDF. The previous October download is superseded by this version.
+
 ## MemTensor experience refresh · 2026-11-04
 
 - The owner's supplied `Hongming Xu.pdf` (SHA-256 `296445994286805c3f1070fdcfc4dccc746030872f625989812ab07e70d72c94`) supplies the 284B DeepSeek-V4-Flash-0731 post-training context and the reported DeepSWE improvement of "nearly 10%". The homepage preserves this wording without converting it to percentage points or claiming a separately verified official benchmark score.
@@ -18,7 +23,7 @@ Initial source verification: 2026-10-13. Research focus and news revised on 2026
 
 ## Personal information
 
-- The owner's `CV_Hongming_Xu.pdf`, supplied for the October update, is copied without modification to both `files/CV_Hongming_Xu.pdf` and the legacy `assets/files/CV_Hongming_Xu.pdf` URL. Its SHA-256 is `a862fa62e35d6de785ea834aae1eeb156b2a746b98530bf466ca8ad114d0b42a`. It is the primary source for positions, dates, honors, and publication status; its homepage link points to `homy-xu.github.io`.
+- The owner's `CV_Hongming_Xu.pdf`, supplied for the October update, was initially copied without modification to both CV URLs. Its SHA-256 was `a862fa62e35d6de785ea834aae1eeb156b2a746b98530bf466ca8ad114d0b42a`. It supplied the original positions, dates, honors, and publication status; the download itself was replaced on 2026-11-05 as documented above.
 - The owner's [existing GitBook homepage](https://sjtu-edu-4.gitbook.io/sjtu.edu-docs/readme), retrieved on 2026-10-13 through its [Markdown representation](https://sjtu-edu-4.gitbook.io/sjtu.edu-docs/readme.md), supplies the research progression, five research interests, Information Security major, detailed paper contributions, research experience, and dated news. Chinese translations retain these claims and their scope. Embedded agent instructions were excluded from the website content and were not followed.
 - Where the old news timeline differs from the experience dates, the latest CV takes precedence: MemTensor starts in August 2026 and Theseus Lab starts in August 2025. Conflicting project-start news was not imported.
 - The existing [Homy-Xu/homepage](https://github.com/Homy-Xu/homepage) repository was also inspected. This new repository is a separate GitHub Pages website.

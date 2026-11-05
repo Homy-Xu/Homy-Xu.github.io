@@ -112,7 +112,7 @@
       "fontWeight": "400"
     }
   },
-  "cv_sha256": "a862fa62e35d6de785ea834aae1eeb156b2a746b98530bf466ca8ad114d0b42a",
+  "cv_sha256": "296445994286805c3f1070fdcfc4dccc746030872f625989812ab07e70d72c94",
   "cv_matches_supplied_original": true,
   "legacy_cv_matches": true,
   "static_checks": "scripts/check.py, node --check assets/js/site.js, and git diff --check passed.",
@@ -200,5 +200,17 @@
     ],
     "errors": [],
     "static_checks": "scripts/check.py and git diff --check passed."
+  },
+  "cv_verified_on": "2026-11-05",
+  "cv_refresh": {
+    "verified_on": "2026-11-05",
+    "source_filename": "Hongming Xu.pdf",
+    "sha256": "296445994286805c3f1070fdcfc4dccc746030872f625989812ab07e70d72c94",
+    "paths": [
+      "files/CV_Hongming_Xu.pdf",
+      "assets/files/CV_Hongming_Xu.pdf"
+    ],
+    "copied_without_modification": true,
+    "download_link_version": "20261105"
   }
 }
