@@ -112,7 +112,7 @@
       "fontWeight": "400"
     }
   },
-  "cv_sha256": "296445994286805c3f1070fdcfc4dccc746030872f625989812ab07e70d72c94",
+  "cv_sha256": "5141ae719491887b1199b27aaced805f2854b9d24049accb486efa10ed7d787a",
   "cv_matches_supplied_original": true,
   "legacy_cv_matches": true,
   "static_checks": "scripts/check.py, node --check assets/js/site.js, and git diff --check passed.",
@@ -204,13 +204,13 @@
   "cv_verified_on": "2026-11-05",
   "cv_refresh": {
     "verified_on": "2026-11-05",
-    "source_filename": "Hongming Xu.pdf",
-    "sha256": "296445994286805c3f1070fdcfc4dccc746030872f625989812ab07e70d72c94",
+    "source_filename": "简历 (12).pdf",
+    "sha256": "5141ae719491887b1199b27aaced805f2854b9d24049accb486efa10ed7d787a",
     "paths": [
       "files/CV_Hongming_Xu.pdf",
       "assets/files/CV_Hongming_Xu.pdf"
     ],
     "copied_without_modification": true,
-    "download_link_version": "20261105"
+    "download_link_version": "5141ae7"
   }
 }

@@ -4,8 +4,8 @@ Initial source verification: 2026-10-13. Research focus and news revised on 2026
 
 ## Current downloadable CV · 2026-11-05
 
-- The owner's supplied `Hongming Xu.pdf` is copied without modification to `files/CV_Hongming_Xu.pdf` and the legacy `assets/files/CV_Hongming_Xu.pdf` URL. Both have SHA-256 `296445994286805c3f1070fdcfc4dccc746030872f625989812ab07e70d72c94` and match the supplied original byte for byte.
-- The homepage's CV button includes the version query `v=20261105` so visitors fetch the replacement PDF. The previous October download is superseded by this version.
+- The owner's latest supplied `简历 (12).pdf` is copied without modification to `files/CV_Hongming_Xu.pdf` and the legacy `assets/files/CV_Hongming_Xu.pdf` URL. Both have SHA-256 `5141ae719491887b1199b27aaced805f2854b9d24049accb486efa10ed7d787a` and match the supplied original byte for byte.
+- The homepage's CV button includes the version query `v=5141ae7` so visitors fetch the replacement PDF. Earlier on 2026-11-05, `Hongming Xu.pdf` with SHA-256 `296445994286805c3f1070fdcfc4dccc746030872f625989812ab07e70d72c94` was published to these URLs; this version supersedes it.
 
 ## MemTensor experience refresh · 2026-11-04
 
